@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#1a1a1a] text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm opacity-75">
+        <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm opacity-75">
           <p>© 2025 Mokshitha Industrial Automation. All rights reserved.</p>
         </div>
       </div>

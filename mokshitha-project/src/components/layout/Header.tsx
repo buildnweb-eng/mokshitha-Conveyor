@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -19,24 +19,6 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
-            <a href="tel:7288048689" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="h-3 w-3" />
-              <span>7288048689</span>
-            </a>
-            <a href="mailto:info@mokshithaautomation.com" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Mail className="h-3 w-3" />
-              <span className="hidden sm:inline">info@mokshithaautomation.com</span>
-            </a>
-          </div>
-          <div className="text-xs">
-            <span>Since 2013 • Hyderabad</span>
-          </div>
-        </div>
-      </div>
-
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-heading font-bold text-xl text-primary">
