@@ -1,19 +1,19 @@
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 export default function Clients() {
   const clients = [
-    'Dr. Reddy\'s Laboratories',
-    'Britannia Industries',
-    'Patanjali Ayurved',
-    'Heritage Foods',
-    'Nuziveedu Seeds',
-    'Parle Products',
-    'Bharat Biotech',
-    'Nutrine Confectionery',
-    'Vimta Labs',
-    'Jodas Expoim',
-    'Akshara Pharma',
-    'Karvy Laboratories',
+    { name: 'Dr. Reddy\'s Laboratories', logo: '/clients/dr-reddys.png' },
+    { name: 'Britannia Industries', logo: '/clients/britannia.png' },
+    { name: 'Patanjali Ayurved', logo: '/clients/patanjali.png' },
+    { name: 'Heritage Foods', logo: '/clients/heritage.png' },
+    { name: 'Nuziveedu Seeds', logo: '/clients/nuziveedu.png' },
+    { name: 'Parle Products', logo: '/clients/parle.png' },
+    { name: 'Bharat Biotech', logo: '/clients/bharat-biotech.png' },
+    { name: 'Nutrine Confectionery', logo: '/clients/nutrine.png' },
+    { name: 'Vimta Labs', logo: '/clients/vimta-labs.png' },
+    { name: 'Jodas Expoim', logo: '/clients/jodas.png' },
+    { name: 'CSIR-IICT', logo: '/clients/csit-iict.png' },
   ];
 
   return (
@@ -28,9 +28,15 @@ export default function Clients() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
           {clients.map((client) => (
-            <Card key={client} className="hover:shadow-hover transition-all duration-300">
-              <CardContent className="flex items-center justify-center p-8 h-32">
-                <p className="text-center font-semibold text-sm">{client}</p>
+            <Card key={client.name} className="hover:shadow-hover transition-all duration-300">
+              <CardContent className="flex items-center justify-center p-6 h-40">
+                <Image 
+                  src={client.logo} 
+                  alt={client.name} 
+                  width={200} 
+                  height={100}
+                  className="object-contain w-full h-full"
+                />
               </CardContent>
             </Card>
           ))}
