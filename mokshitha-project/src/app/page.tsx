@@ -3,13 +3,14 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Users, Award, Clock } from 'lucide-react';
+import { AnimatedCounter } from '@/components/AnimatedCounter';
 
 export default function Home() {
   const stats = [
-    { icon: Users, label: 'Satisfied Clients', value: '500+' },
-    { icon: Award, label: 'Years Experience', value: '11+' },
-    { icon: CheckCircle, label: 'Projects Completed', value: '1000+' },
-    { icon: Clock, label: 'On-Time Delivery', value: '98%' },
+    { icon: Users, label: 'Satisfied Clients', value: 500, suffix: '+' },
+    { icon: Award, label: 'Years Experience', value: 11, suffix: '+' },
+    { icon: CheckCircle, label: 'Projects Completed', value: 1000, suffix: '+' },
+    { icon: Clock, label: 'On-Time Delivery', value: 98, suffix: '%' },
   ];
 
 
@@ -70,7 +71,9 @@ export default function Home() {
               <Card key={stat.label} className="text-center">
                 <CardContent className="pt-6">
                   <stat.icon className="h-10 w-10 mx-auto mb-3 text-accent" />
-                  <p className="text-3xl font-bold text-primary mb-1">{stat.value}</p>
+                  <p className="text-3xl font-bold text-primary mb-1">
+                    <AnimatedCounter end={stat.value} suffix={stat.suffix} duration={2500} />
+                  </p>
                   <p className="text-sm text-muted-foreground">{stat.label}</p>
                 </CardContent>
               </Card>
