@@ -1,6 +1,6 @@
-# Mokshitha Industrial Automation - Next.js Website
+# MOKSHITHA INDUSTRIAL AUTOMATION - Next.js Website
 
-This is the official website for Mokshitha Industrial Automation, a leading manufacturer of industrial conveyor belts and automation solutions in Hyderabad, India.
+This is the official website for **MOKSHITHA INDUSTRIAL AUTOMATION**, a leading manufacturer of industrial conveyor belts and automation solutions in Hyderabad, India.
 
 ## 🚀 Project Overview
 
@@ -70,6 +70,19 @@ mokshitha-project/
 5. **Clients** (`/clients`) - Client showcase and statistics
 6. **Contact** (`/contact`) - Contact form and facility information
 7. **404** (`/not-found`) - Custom 404 error page
+
+## 📖 Complete Product Catalog
+
+For detailed information about all products, technical specifications, and company capabilities, please refer to:
+
+**[CATALOG-INFORMATION.md](./CATALOG-INFORMATION.md)** - Complete catalog with:
+- 50+ Product types and descriptions
+- Technical specifications for all belt types
+- Complete client list (Dr. Reddy's, Britannia, Patanjali, Heritage, etc.)
+- 30+ Industries served
+- Brand partnerships (Gates, Bando, MBL, Rexnord, etc.)
+- Specialized equipment details
+- Component specifications
 
 ## 🛠 Technology Stack
 
@@ -163,13 +176,16 @@ This project was migrated from React Vite to Next.js with the following changes:
 
 ## 📞 Contact Information
 
-- **Phone**: 7288048689, 8885565829
-- **Email**: info@mokshithaautomation.com
-- **Address**: Plot No. 54, Kushaiguda IDA Phase-IV, Medchal, Hyderabad – 500 005
+**MOKSHITHA INDUSTRIAL AUTOMATION**
+
+- **Phone**: 7288048869, 8885565829
+- **Email**: kumarbeltings@gmail.com, kbcs@gmail.com, info@mokshithaautomation.com
+- **Website**: www.kumarbeltings.com
+- **Address**: Plot No. 54, Kushaiguda IDA Phase-IV, Medchal, Telangana – 500 005
 
 ## 📄 License
 
-© 2025 Mokshitha Industrial Automation. All rights reserved.
+© 2025 MOKSHITHA INDUSTRIAL AUTOMATION. All rights reserved.
 
 ---
 

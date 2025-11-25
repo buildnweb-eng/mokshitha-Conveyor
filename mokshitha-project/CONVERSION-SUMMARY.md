@@ -203,3 +203,7 @@ Conversion completed on: November 25, 2025
 Next.js Version: 15.5.6
 React Version: 18.3.1
 
+---
+
+**© 2025 MOKSHITHA INDUSTRIAL AUTOMATION. All rights reserved.**
+

@@ -12,24 +12,6 @@ export default function Home() {
     { icon: Clock, label: 'On-Time Delivery', value: '98%' },
   ];
 
-  const productCategories = [
-    {
-      title: 'Conveyor Components',
-      description: 'High-quality rollers, belts, and frames for all applications',
-    },
-    {
-      title: 'Conveyor Systems',
-      description: 'Complete belt, bottle, and inspection conveyor solutions',
-    },
-    {
-      title: 'Specialized Belts',
-      description: 'PVC, rubber, timing, and modular belt systems',
-    },
-    {
-      title: 'Industrial Systems',
-      description: 'Wire mesh, drum, and powered roller conveyors',
-    },
-  ];
 
   const whyChooseUs = [
     'ISO certified manufacturing facility',
@@ -97,27 +79,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Categories */}
-      <section className="py-20">
+      {/* Our Clients - Horizontal Scrolling */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-4xl font-bold mb-4">Our Product Range</h2>
+            <h2 className="font-heading text-4xl font-bold mb-4">Our Valued Clients</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive conveyor solutions for every industrial need
+              Trusted by leading companies across pharmaceutical, food, and manufacturing sectors
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {productCategories.map((category) => (
-              <Card key={category.title} className="hover:shadow-hover transition-all duration-300">
-                <CardContent className="pt-6">
-                  <h3 className="font-heading text-xl font-semibold mb-2">{category.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-                  <Button asChild variant="link" className="text-accent p-0 h-auto">
-                    <Link href="/products">Learn More →</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+          
+          {/* Scrolling Client Logos */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-left">
+              {/* First set of clients */}
+              <div className="flex gap-12 items-center px-6">
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain" />
+                </div>
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex gap-12 items-center px-6">
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain" />
+                </div>
+                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
