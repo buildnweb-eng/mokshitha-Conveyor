@@ -96,76 +96,76 @@ export default function Home() {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll-left">
               {/* First set of clients */}
-              <div className="flex gap-12 items-center px-6">
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain" />
+              <div className="flex gap-8 items-center px-6">
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
               </div>
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex gap-12 items-center px-6">
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain" />
+              <div className="flex gap-8 items-center px-6">
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/dr-reddys.png" alt="Dr. Reddy's Laboratories" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/britannia.png" alt="Britannia Industries" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/patanjali.png" alt="Patanjali Ayurved" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/heritage.png" alt="Heritage Foods" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/nuziveedu.png" alt="Nuziveedu Seeds" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/parle.png" alt="Parle Products" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/bharat-biotech.png" alt="Bharat Biotech" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/nutrine.png" alt="Nutrine Confectionery" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/vimta-labs.png" alt="Vimta Labs" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/jodas.png" alt="Jodas Expoim" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
-                <div className="flex-shrink-0 w-48 h-32 bg-white border border-border rounded-lg flex items-center justify-center p-4 shadow-sm hover:shadow-md transition-shadow">
-                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain" />
+                <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
+                  <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
               </div>
             </div>
