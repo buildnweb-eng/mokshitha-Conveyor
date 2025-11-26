@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -21,9 +22,18 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-heading font-bold text-xl text-primary">
-            MOKSHITHA
-            <span className="block text-xs text-muted-foreground font-normal">Industrial Automation</span>
+          <Link href="/" className="flex items-center gap-3">
+            <Image 
+              src="/logo/logo.jpeg" 
+              alt="Mokshitha Logo" 
+              width={50} 
+              height={50}
+              className="object-contain rounded-lg"
+            />
+            <div className="font-heading font-bold text-xl text-primary">
+              MOKSHITHA
+              <span className="block text-xs text-muted-foreground font-normal">Industrial Automation</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
