@@ -18,6 +18,14 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Mokshitha Industrial Automation - Conveyor Belt Manufacturers",
   description: "Leading manufacturer of industrial conveyor belts and automation solutions since 2013. Based in Hyderabad, India.",
+  icons: {
+    icon: [
+      { url: '/logo/logo.jpeg', type: 'image/jpeg' },
+    ],
+    apple: [
+      { url: '/logo/logo.jpeg', type: 'image/jpeg' },
+    ],
+  },
 };
 
 export default function RootLayout({
