@@ -3,11 +3,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: 'Home', path: '/' },
@@ -38,15 +40,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.path}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.path;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.path}
+                  className="relative text-sm font-medium text-foreground hover:text-primary transition-colors pb-1"
+                >
+                  {item.name}
+                  {isActive && (
+                    <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1.5 h-1.5 bg-primary rounded-full"></span>
+                  )}
+                </Link>
+              );
+            })}
             <Button asChild variant="default" className="bg-accent hover:bg-accent/90">
               <Link href="/contact">Get Quote</Link>
             </Button>
@@ -66,16 +74,22 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.path}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const isActive = pathname === item.path;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.path}
+                    className="relative text-sm font-medium text-foreground hover:text-primary transition-colors flex items-center gap-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {isActive && (
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                    )}
+                    {item.name}
+                  </Link>
+                );
+              })}
               <Button asChild variant="default" className="bg-accent hover:bg-accent/90 w-full">
                 <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Get Quote</Link>
               </Button>

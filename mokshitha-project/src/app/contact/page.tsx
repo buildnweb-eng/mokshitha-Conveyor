@@ -165,7 +165,7 @@ export default function Contact() {
               </div>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  Our state-of-the-art manufacturing facility is located in the heart of Hyderabad's industrial zone. 
+                  Our state-of-the-art manufacturing facility is located in the heart of Hyderabad&apos;s industrial zone. 
                   We welcome visits from clients and partners to see our operations firsthand.
                 </p>
                 <div className="bg-muted p-4 rounded-lg">

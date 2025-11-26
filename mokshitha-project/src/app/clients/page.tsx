@@ -45,7 +45,7 @@ export default function Clients() {
         <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12 text-center">
           <h2 className="font-heading text-3xl font-bold mb-4">Join Our Growing Family</h2>
           <p className="text-lg opacity-95 mb-6 max-w-2xl mx-auto">
-            We're proud to serve 500+ satisfied clients across India. Experience the quality and reliability that industry leaders trust.
+            We&apos;re proud to serve 500+ satisfied clients across India. Experience the quality and reliability that industry leaders trust.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="bg-primary-foreground text-primary rounded-lg px-6 py-4">
