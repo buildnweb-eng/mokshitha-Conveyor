@@ -23,12 +23,13 @@ npm run lint      # Run ESLint
 ## Architecture
 
 ### Directory Structure
-- `mokshitha-project/src/app/` - Next.js App Router pages (about, clients, contact, industries, products)
-- `mokshitha-project/src/components/ui/` - shadcn/ui component library (44 components)
-- `mokshitha-project/src/components/layout/` - Header and Footer components
-- `mokshitha-project/src/hooks/` - Custom hooks (use-mobile, use-toast)
-- `mokshitha-project/src/lib/utils.ts` - Utility functions (cn for className merging)
-- `mokshitha-project/public/` - Static assets (images, videos, favicon)
+- `src/app/` - Next.js App Router pages (about, clients, contact, industries, products)
+- `src/components/ui/` - shadcn/ui component library (44 components)
+- `src/components/layout/` - Header and Footer components
+- `src/components/` - Custom components (AnimatedCounter, ProductCard, FloatingCTA, etc.)
+- `src/hooks/` - Custom hooks (use-mobile, use-toast)
+- `src/lib/utils.ts` - Utility functions (cn for className merging)
+- `public/` - Static assets (images, videos, favicon)
 
 ### Key Patterns
 
@@ -45,6 +46,16 @@ import { cn } from '@/lib/utils';
 **Styling**: Tailwind CSS utility classes with custom design tokens defined in `src/app/globals.css`. Color palette uses CSS variables (--primary, --accent, --secondary).
 
 **Form Handling**: React Hook Form + Zod validation pattern (see contact page for example).
+
+**Custom Components**: Beyond shadcn/ui, the project has custom components:
+- `AnimatedCounter` - Number animation with Intersection Observer
+- `ProductCard` / `IndustryCard` - Display cards for products and industries
+- `FloatingCTA` - Floating call-to-action button
+- `NavLink` - Navigation link utility
+
+**SEO & Structured Data**: Pages include JSON-LD schemas (Organization, LocalBusiness, FAQPage, Product, Reviews) for rich search results.
+
+**Custom Animations**: CSS animations defined in `globals.css` (e.g., `.animate-scroll-left` for infinite logo scrolling).
 
 ### Tech Stack
 - Next.js 15 (App Router)

@@ -17,7 +17,7 @@ The About page currently has **4 sections**:
 | 3 | Core Values | 4 value cards (Mission, Expert Team, Quality First, Continuous Growth) |
 | 4 | Capabilities | 3 capability cards (Manufacturing Excellence, Engineering Solutions, Quality Assurance) |
 
-**Current Issues Identified:**
+**Current Issues Identified:**d
 - No Call-to-Action (CTA) buttons throughout the page
 - No team/leadership information despite mentioning "Expert Team"
 - No company timeline or milestones (only mentions 2013 founding)
