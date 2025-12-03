@@ -19,7 +19,7 @@ import {
 } from '@/components/ui/tooltip';
 import { ChevronDown, ChevronUp, Weight, Ruler, Thermometer, FileText } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import type { Product, Industry } from '@/data/products';
+import type { Product } from '@/data/products';
 import { industries } from '@/data/industries';
 
 interface ProductCardProps {

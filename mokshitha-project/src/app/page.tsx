@@ -479,8 +479,8 @@ export default function Home() {
       <section className="py-20 bg-muted relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 text-9xl text-accent">"</div>
-          <div className="absolute bottom-10 right-10 text-9xl text-accent">"</div>
+          <div className="absolute top-10 left-10 text-9xl text-accent">&quot;</div>
+          <div className="absolute bottom-10 right-10 text-9xl text-accent">&quot;</div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -511,7 +511,7 @@ export default function Home() {
 
                   {/* Testimonial Quote */}
                   <p className="text-foreground mb-6 text-lg leading-relaxed relative z-10">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
 
                   {/* Author Info */}
@@ -909,7 +909,7 @@ export default function Home() {
               <div>
                 <h2 className="font-heading text-4xl font-bold mb-4">Get a Quick Quote</h2>
                 <p className="text-muted-foreground mb-6">
-                  Share your requirements and we'll respond within 24 hours with a customized solution.
+                  Share your requirements and we&apos;ll respond within 24 hours with a customized solution.
                 </p>
                 <form className="space-y-4">
                   <div>
