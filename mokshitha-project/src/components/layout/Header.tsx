@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,10 +26,10 @@ const Header = () => {
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <Image 
-              src="/logo/logo.jpeg" 
-              alt="Mokshitha Logo" 
-              width={50} 
+            <Image
+              src="/logo/logo.jpeg"
+              alt="Mokshitha Logo"
+              width={50}
               height={50}
               className="object-contain rounded-lg"
             />
@@ -46,12 +47,14 @@ const Header = () => {
                 <Link
                   key={item.name}
                   href={item.path}
-                  className="relative text-sm font-medium text-foreground hover:text-primary transition-colors pb-1"
+                  className={cn(
+                    "text-sm font-medium transition-colors px-3 py-2 rounded-md",
+                    isActive
+                      ? "bg-primary/10 text-primary font-semibold"
+                      : "text-foreground hover:text-primary hover:bg-muted"
+                  )}
                 >
                   {item.name}
-                  {isActive && (
-                    <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1.5 h-1.5 bg-primary rounded-full"></span>
-                  )}
                 </Link>
               );
             })}
@@ -80,12 +83,14 @@ const Header = () => {
                   <Link
                     key={item.name}
                     href={item.path}
-                    className="relative text-sm font-medium text-foreground hover:text-primary transition-colors flex items-center gap-2"
+                    className={cn(
+                      "text-sm font-medium transition-colors px-3 py-2 rounded-md block",
+                      isActive
+                        ? "bg-primary/10 text-primary font-semibold"
+                        : "text-foreground hover:text-primary hover:bg-muted"
+                    )}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    {isActive && (
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
-                    )}
                     {item.name}
                   </Link>
                 );

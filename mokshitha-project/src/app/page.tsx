@@ -255,21 +255,17 @@ export default function Home() {
       {/* Hero Section with Video Background */}
       <section className="relative h-[600px] md:h-[700px] flex items-center overflow-hidden">
         {/* Video Background - Add your 10-second conveyor belt video to public/videos/hero.mp4 */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          poster="/assets/hero-video-poster.jpg"
+        <Image
+          src="/assets/hero-new.png"
+          alt="Industrial Conveyor Automation"
+          fill
+          priority
           className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/hero-conveyor.mp4" type="video/mp4" />
-          {/* Fallback to image if video not available */}
-        </video>
-        
+        />
+
         {/* Teal Overlay */}
         <div className="absolute inset-0 bg-gradient-hero"></div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             {/* Trust Badge */}
@@ -397,7 +393,7 @@ export default function Home() {
               Trusted by leading companies across pharmaceutical, food, and manufacturing sectors
             </p>
           </div>
-          
+
           {/* Scrolling Client Logos */}
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll-left">
@@ -437,7 +433,7 @@ export default function Home() {
                   <Image src="/clients/csit-iict.png" alt="CSIR-IICT" width={180} height={90} className="object-contain filter hover:brightness-110 transition-all" />
                 </div>
               </div>
-              
+
               {/* Duplicate set for seamless loop */}
               <div className="flex gap-8 items-center px-6">
                 <div className="flex-shrink-0 w-52 h-36 bg-gradient-to-br from-white to-gray-50 border-2 border-secondary/20 rounded-xl flex items-center justify-center p-5 shadow-lg hover:shadow-2xl hover:border-secondary/60 hover:scale-105 transition-all duration-300 backdrop-blur-sm">
